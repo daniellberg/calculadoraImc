@@ -4,7 +4,7 @@ const btnLimpa = document.getElementById('btnClear');
 btnCalcula.addEventListener("click", clicaBtn);
 btnLimpa.addEventListener("click", limpaBtn);
 
-const categoriasImc = ["abaixo do peso", "com o peso normal", "com pré-obesidade", "com obesidade Grau 1", "com obesidade Grau 2", "com obsesidade Grau 3"]
+const categoriasImc = ["abaixo do peso", "com o peso normal", "com pré-obesidade", "com obesidade Grau 1", "com obesidade Grau 2", "com obesidade Grau 3"]
 
 function clicaBtn(){
 
@@ -12,7 +12,6 @@ function clicaBtn(){
     const altura = document.getElementById("alturaF");
     
     const imc = (peso.value/Math.pow(altura.value,2)).toFixed(1);
-    
     document.getElementById("imcResult").textContent = imc;
 
     $("#imcResult").text(imc);
@@ -28,8 +27,10 @@ function clicaBtn(){
         $("#categoriaImc").text(categoriasImc[3]);
     } else if(imc>34.9 && imc<=39.9){
         $("#categoriaImc").text(categoriasImc[4]);
-    } else{
+    } else if(imc!=NaN && imc>39.9){
         $("#categoriaImc").text(categoriasImc[5]);
+    } else{
+        alert("Digite um valor válido!");
     }
 }
 
