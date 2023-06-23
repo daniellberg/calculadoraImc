@@ -29,4 +29,52 @@ body{
 }
 
 .calcBody{
+    width: 50vw;
+    height: 70vh;
+    text-align: center;
+    padding: 20px 10px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgb(204, 163, 118);
+    background-color: rgb(231, 184, 131);
+}
+
+.input{
+    display: flex;
+    justify-content: space-between;
+    width: 36vw;
+    margin: auto;
+    padding: 15px 0;
+    /* background-image: url(weight.png) ;
+    background-position: 100px 10px;
+    background-repeat: no-repeat;
+    background-size: 20px;*/
+} 
+
+.saidas, .buttons{
+    margin: 3%;
+}
+
+#imcResult{
+    font-weight: 500;
+}
+
+input, button{
+    background-color: #eeeeee;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+button{
+    margin: 0px 20px;
+    padding: 2px 20px;
+    border: .5px solid rgb(204, 163, 118);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #d9d9d9;
+    color: #323232;
+    transition: all .2s ease-in-out;
 }
