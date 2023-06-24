@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>imc</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="
+https://cdn.jsdelivr.net/npm/sweetalert2@11.7.12/dist/sweetalert2.min.css
+" rel="stylesheet">
 </head>
 <body>
 
@@ -25,14 +28,14 @@
                 <button id="btnCalc">Calcular</button>
                 <button id="btnClear">Limpar</button>
             </div>
-            <p>Seu IMC é: <span id="imcResult"></span></p>  
+            <p id="parResultado">Seu IMC é: <span id="imcResult"></span></p>  
             <p class="resultadoAntes" id="resultado">Você encontra-se <span id="categoriaImc"></span></p>
         </div>
     </div>
-
-        
     
 <script src="app.js"></script>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.12/dist/sweetalert2.all.min.js"></script>
+
 </body>
 </html>
